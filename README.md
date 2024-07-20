@@ -4,8 +4,7 @@ This project provides a Node.js addon written in Rust to retrieve the command li
 
 ## Prerequisites
 
-- [Node.js](https://nodejs.org/) (>= 12.x)
-- [Rust](https://www.rust-lang.org/) (>= 1.50.0)
+- [Node.js](https://nodejs.org/) (>= 18.x)
 - [Yarn](https://yarnpkg.com/) or [npm](https://www.npmjs.com/)
 
 ## Installation
@@ -25,7 +24,7 @@ This project provides a Node.js addon written in Rust to retrieve the command li
 const { getProcessCommandLine } = require('@tipspace/get-command-line');
 
 try {
-  const commandLine = getProcessCommandLine('process_name');
+  const commandLine = getProcessCommandLine('LeagueClientUx.exe');
   console.log(`Command Line: ${commandLine}`);
 } catch (err) {
   console.error(`Error: ${err.message}`);
@@ -38,7 +37,7 @@ try {
 import { getProcessCommandLine } from '@tipspace/get-command-line';
 
 try {
-  const commandLine = getProcessCommandLine('process_name');
+  const commandLine = getProcessCommandLine('LeagueClientUx.exe');
   console.log(`Command Line: ${commandLine}`);
 } catch (err) {
   console.error(`Error: ${err.message}`);
@@ -49,6 +48,7 @@ try {
 
 ### Building
 
+You'll need [Rust](https://www.rust-lang.org/) (>= 1.50.0) to build the project.
 To build the project, run:
 
 ```
