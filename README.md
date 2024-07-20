@@ -24,7 +24,7 @@ This project provides a Node.js addon written in Rust to retrieve the command li
 const { getProcessCommandLine } = require('@tipspace/get-command-line');
 
 try {
-  const commandLine = getProcessCommandLine('process_name');
+  const commandLine = getProcessCommandLine('LeagueClientUx.exe');
   console.log(`Command Line: ${commandLine}`);
 } catch (err) {
   console.error(`Error: ${err.message}`);
@@ -37,7 +37,7 @@ try {
 import { getProcessCommandLine } from '@tipspace/get-command-line';
 
 try {
-  const commandLine = getProcessCommandLine('process_name');
+  const commandLine = getProcessCommandLine('LeagueClientUx.exe');
   console.log(`Command Line: ${commandLine}`);
 } catch (err) {
   console.error(`Error: ${err.message}`);
