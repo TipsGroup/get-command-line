@@ -1,6 +1,10 @@
 {
   "name": "@tipspace/get-command-line-win32-ia32-msvc",
-  "version": "0.0.0",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TipsGroup/get-command-line.git"
+  },
   "os": [
     "win32"
   ],

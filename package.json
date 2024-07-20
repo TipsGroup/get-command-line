@@ -1,9 +1,13 @@
 {
   "name": "@tipspace/get-command-line",
-  "description": "This project provides a Node.js addon written in Rust to retrieve the command line of a process by its name on Windows.",
+  "description": "This project provides a Node.js addon written in Rust to retrieve the command line of a process by its name on Windows",
   "version": "1.0.0",
   "main": "index.js",
   "types": "index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TipsGroup/get-command-line.git"
+  },
   "napi": {
     "name": "get-command-line",
     "triples": {
