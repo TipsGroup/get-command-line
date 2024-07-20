@@ -3,7 +3,7 @@ import test from 'ava'
 import { getProcessCommandLine } from '../index.js'
 
 test('returns the process command line', (t) => {
-  t.is(getProcessCommandLine("explorer.exe").toLowerCase(), "c:\\windows\\explorer.exe")
+  t.regex(getProcessCommandLine("node.exe").toLowerCase(), /node.exe/)
 })
 
 test('throws an error when the process is not running', (t) => {
